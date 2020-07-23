@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Q1
+//     function custom(){
+//         var a = +prompt("A?")
+//         var b = +prompt("B?")
+//         Math.pow(a, b)
+// console.log( Math.pow(a, b))
+//     }    
+// custom();
+
+//Q2
+
+// function leap(){
+//     var a = +prompt("enter year?");
+//     var z = a/4;
+//     if(z != 0){
+// alert("Leap year!")
+//     }
+//     else{
+//         alert("Not a leap year!")
+//     }
+// }
+// leap();
+
+//Q3
+// var a=1,b=2,c=3
+//  var S = ( a + b + c ) / 2
+//  var area = S*(S-a)*(S-b)*(S-c)
+// function f_one(){
+//   console.log(S)
+//  }
+//  function lala(){
+// console.log(area)
+//  }
+
+//       f_one();
+//       lala();
+     
+
+//Q4
+
+// var i = +prompt("enter marks 1st?"), j = +prompt("enter marks 2nd?"), k = +prompt("enter marks 3rd?");
+// var a,p;
+// function average(){
+     
+//   a = (i+j+k)/3;
+//   return a;
+// }
+// function percentage(){
+//     p = ((i+j+k)/100)*100;
+//  return p;
+// }
+// function main(){
+//     percentage()
+//     average()
+//     console.log(a)
+//     console.log(p)
+// }
+// main();
+
+//Q5
+// function indexOf(){
+// var str = "there will bee thunderstorm tommorow";
+// var n = str.indexOf("e");
+// console.log(n)
+// }
+//  indexOf();
+ 
+ //Q6
+// function remove(){
+// var strings = "hey there how are you mates whats up" ;                          
+// pasta = strings.replace( /[aeiou]/g, '' );              
+// console.log(pasta);
+// }
+// remove()
+
+//Q7(important)
+
+// function findoccurrences() {
+//   var str = "Pleases read this application and give me gratuity";
+//   var count = 0;
+//   let haveSeenVowel = false;
+
+//   for (const letter of str.toLowerCase()) {
+//     switch (letter) {
+//       case 'a':
+//       case 'e':
+//       case 'i':
+//       case 'o':
+//       case 'u':
+//         {
+//           if (haveSeenVowel) {
+//             count++;
+//             haveSeenVowel = false;
+//           } else {
+//             haveSeenVowel = true;
+//           }
+//           break;
+//         }
+//       default:
+//         haveSeenVowel = false
+//     }
+//   }
+
+//   return count
+// }
+
+// console.log(findoccurrences());
+
+
+///Q8
+
+// function km_to_m(){
+//      var k = +prompt("Enter Kilometer","Convert to meter")
+//      var c = k * 1000;
+//      console.log("meters --> " + c)
+// }
+// function km_to_feet(){
+//      var ki = +prompt("Enter Kilometer","Convert to feet")
+//      var co = ki * 3280.84;
+//      console.log("feet --> " + co)
+// }
+// function km_to_inches(){
+//     var kil = +prompt("Enter Kilometer","Convert to inches")
+//     var con = kil * 39370.1;
+//     console.log("inches -- > " + con)
+// }
+// function km_to_centimeters(){
+//     var kilo = +prompt("Enter Kilometer","Convert to centimeters")
+//     var conv = kilo * 100000 ; 
+//     console.log("centimeter ---> " + conv)
+//     }
+// km_to_m();
+// km_to_feet();
+// km_to_inches();
+// km_to_centimeters();
+
+///Q9
+
+// var working_hours= +prompt("How much time have you worked?","Enter number of hours here!")
+// var daily_wage_hour= 6;
+
+// if (working_hours > 40){
+//    var over_time = working_hours - 40;
+//    var over_time_pay = over_time * 12.00;
+//    console.log("Your overtime pay will be $ "+over_time_pay);
+// }
+// else if(working_hours <= 40){
+//     console.log("you will have $ " +daily_wage_hour+ "regular rate because your hours didnt exceeded 40") 
+// }
+
+///Q10
+// var amount = +prompt("enter amount to be withdrawn?")
+// var hundred = amount / 100;
+// var amount_left_after_100_notes = amount - (Math.floor(hundred)*100)
+// console.log("You will get "+ Math.floor(hundred) +" Notes of 100 and your amount will be left is " +  amount_left_after_100_notes)
+// var fifty = amount_left_after_100_notes / 50;
+// var amount_left_after_50_notes = amount_left_after_100_notes - (Math.floor(fifty)*50)
+// console.log("You will get "+ Math.floor(fifty) +" Notes of 50 and your amount will be left is " +  amount_left_after_50_notes)
+
+// var ten = amount_left_after_50_notes / 10;
+// var amount_left_after_10_notes = amount_left_after_50_notes - (Math.floor(ten)*10)
+// console.log("You will get "+ Math.floor(ten) +" Notes of 10 and your amount will be left is " +  amount_left_after_10_notes)
+
+    </script>
+</body>
+</html>

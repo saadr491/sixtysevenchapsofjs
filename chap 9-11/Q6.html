@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MARKSHEET</h1>
+    <script>
+    var tm = +prompt("enter your total marks");
+    document.write("total marks :" + tm + "<br>")
+    var om = +prompt("enter your achieved marks");
+    document.write("achieved marks :" + om + "<br>")
+    var percent = (om/tm)*100;
+    document.write("percentage" + percent + "<br>")
+if (percent >=80 && percent<=100){
+    document.write ("A+ " + "<br>" )
+    document.write("Remarks:-Excellent")
+} 
+else if (percent >=70 && percent<=80){
+    document.write("A " + "<br>" )
+    document.write("Remarks:-Good")
+}
+else if (percent >=60 && percent<=70){
+    document.write("B You need to Improve" + "<br>"  )
+    document.write("Remarks:-You need to Improve")
+    }
+    else if ( percent<60){
+        document.write("Fail"  )
+        }
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var $item1=+prompt("item 1 price?")
+    document.write("price of item 1 is :" + $item1 + "<br>")
+    var q_item1=+prompt("quantity of item 1?")
+    document.write("quantity of item 1 is : " + q_item1 + "<br>")
+    var $item2=+prompt("item 2 price?")
+    document.write("price of item 2 is :" + $item2 + "<br>")
+    var q_item2=+prompt("quantity of item 2?")
+    document.write("quantity of item 2 is : " + q_item2 + "<br>")
+    var $sc= +prompt("shipping charges?")
+    document.write("shipping charges : " + $sc + "<br>")
+    tc = ($item1 * q_item1) + ($item2 * q_item2) + $sc
+    document.write("total cost of your order is :" + tc + "<br>")
+    </script>
+</body>
+</html>

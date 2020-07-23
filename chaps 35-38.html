@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /* Q1 */
+//     function datelist(){
+// var d = new Date();
+// document.write(d);
+//     }
+    // datelist();
+    // /* Q2*/
+    // function concat(){
+    //     var firstname = prompt("Enter First Name?")
+    // var lastname = prompt("Enter Last Name?")
+    // fullname = firstname + lastname
+    // alert("Greetings!"+ " " + fullname)
+
+    // }
+    // concat();
+    /* Q3*/
+//          function myFunction(p1, p2) {
+//         var p1 = +prompt("Enter number one?")
+//      var p2 = +prompt("Enter number two?")
+//      return  p1 + p2
+          
+       
+// }
+// var r = myFunction();
+// document.write(r)
+    /* Q4*/
+//     function calc(n1,opr,n2){
+// if (opr === "+"){
+//     return n1 + n2 ;
+// }
+// else if(opr === "-"){
+//     return n1 - n2 ;
+// }
+// else if(opr === "*"){
+//     return n1 * n2 ;
+// }
+//     }
+//     var r = calc(3,"+",4);
+//     var r1 = calc(3,"-",4);
+//     var r2 = calc(3,"*",4);
+//     document.write(r + "<br>");
+//     document.write(r1 + "<br>");
+//     document.write(r2 + "<br>");
+    /* Q5*/
+//     function sq(a){
+// return (a * a)
+//     }
+//     document.write(sq(3));
+    /* Q6 (imp)*/
+//     function factorial(n){
+//   let answer = 1;
+//   if (n == 0 || n == 1){
+//     return answer;
+//   }else{
+//     for(var i = n; i >= 1; i--){
+//       answer = answer * i;
+//     }
+//     return answer;
+//   }  
+// }
+// let n = 5;
+// answer = factorial(n)
+// console.log("The factorial of " + n + " is " + answer);
+    /* Q7*/
+//     var i = +prompt("Start Number?")
+//     var n = +prompt("End Number?")
+//     for (var a = i; a <= n; a = a+1)
+// {
+//     document.write(a + "<br>");
+// }   
+
+    /* Q8*/
+ 
+//     function rat(base,  per) {
+//     return Math.sqrt(base*base  + per*per) ;
+ 
+
+// var h = rat(3,4);
+// document.write(h)
+    /* Q9*/
+// function area(w,h){
+// return w*h;
+// }
+// var a = area(2,8);
+// document.write(a);
+    /* Q10 (imp)*/
+//    function p_drome(){ 
+// var word = prompt("enter your word?");
+// var check ="";
+// for( var i = word.length - 1 ;i >= 0 ; i--){
+// check +=word[i]    
+// }
+// if(word===check){ /* same word in reverse order like "civic=civic" or "refer=refer" etc*/
+//     console.log(word + " is a palindrome word")
+// }
+//    }
+//    p_drome();
+    /* Q11(imp)*/
+    //capitalize_Words 
+// function capitalize_Words(str)
+// {
+//  return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+// }
+// console.log(capitalize_Words('the quick brown fox'));
+
+    /* Q12*/
+//     function find_longest_word(str)
+// {
+//   var array1 = str.match(/\w[a-z]{0,}/gi);
+//   var result = array1[0];
+
+//   for(var x = 1 ; x < array1.length ; x++)
+//   {
+//     if(result.length < array1[x].length)
+//     {
+//     result = array1[x];
+//     } 
+//   }
+//   return result;
+// }
+// console.log(find_longest_word('Web Development Tutorial'));
+
+    /* Q13 (imp)*/
+//     function char_count(str, letter) 
+// {
+//  var letter_Count = 0;
+//  for (var position = 0; position < str.length; position++) 
+//  {
+//     if (str.charAt(position) == letter) 
+//       {
+//       letter_Count += 1;
+//       }
+//   }
+//   return letter_Count;
+// }
+
+// console.log(char_count('JSResourceS.com', 'o'));
+
+    /* Q14*/
+//     function calcCircumference(radius) {
+//   var circumference = (Math.PI * 2) * radius;
+  
+ 
+//   console.log ("The circumference of a circle with a radius of " + radius + " is " + circumference )
+// }
+// function calcArea(radius){
+//     var area = (Math.pow(radius, 2)) * Math.PI;
+//     console.log(" area for this circle is " + area + ".")
+// }
+//  calcCircumference(10);
+//  calcCircumference(5);
+//  calcArea(3);
+//  calcArea(6);
+    </script>
+</body>
+</html>

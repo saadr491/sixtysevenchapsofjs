@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  var chr = +prompt("number?");
+     if (chr>=65 && chr<=90){
+		document.write("chraracter is a capital letter in between A-Z");}
+	else if (chr>=97 && chr<=122){
+		document.write("chraracter is a small letter in between a-z");}
+	else if (chr>=48 && chr<=57){
+		document.write("chraracter is a digit in between 0-9")}
+	else if ( (chr>0 && chr<=47) || (chr>=58 && chr<=64 ) || (chr>=91 && chr<=96) || (chr>=123 && chr<=127) ){
+		document.write("chraracter is a special symbol like for example !,@,#,$,%,^,&,*,(,)");
+        }
+    </script>
+</body>
+</html>

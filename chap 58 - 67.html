@@ -1,0 +1,196 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="Alex" value="Alex" >
+        <button onclick="myFunction()">Try it</button>
+        <label for="last-name" >Last Name</label>
+        <input type="text" id="last-name" name="Bank" value="Bank"/>
+        <button onclick="myFunction()">Try it</button>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="alexbank@example.com" value="alexbank@example.com" />
+        <button onclick="yourFunction()">Try it</button>
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+        </div>
+
+<!--Q1-->
+<!--part 1-->
+<!-- <script>
+var main_content = document.getElementById("main-content")
+</script> -->
+<!--part 2-->
+<!-- <script>
+    var maincontent=document.getElementById("main-content");
+    console.log(maincontent.childNodes[0])
+    console.log(maincontent.childNodes[1])
+    console.log(maincontent.childNodes[2])
+    console.log(maincontent.childNodes[3])
+    console.log(maincontent.childNodes[4])
+    </script> -->
+<!--part 3-->
+<!-- <div id="main-content" class="example">
+        <p class="child" onclick="myFunction()"> First Name : Alex</p> 
+        <p class="child" id="lastName" onclick="myFunction()">Last Name: Bank</p>
+        <p class="child" onclick="myFunction()"> Email : alexbank@example.com</p>
+        <p class="child" onclick="myFunction()"> Country : Pakistan </p>
+        <p class="child" onclick="myFunction()"> contact : +92 300 1234567</p>
+    </div>
+<script>
+        function myFunction() {
+  var list = document.getElementsByClassName("example")[0];
+  list.getElementsByClassName("child")[0].innerHTML = "Alex";
+  var list = document.getElementsByClassName("example")[0];
+  list.getElementsByClassName("child")[1].innerHTML = "Bank";
+  var list = document.getElementsByClassName("example")[0];
+  list.getElementsByClassName("child")[2].innerHTML = "alexbank@example.com";
+  var list = document.getElementsByClassName("example")[0];
+  list.getElementsByClassName("child")[3].innerHTML = "Pakistan";
+  var list = document.getElementsByClassName("example")[0];
+  list.getElementsByClassName("child")[4].innerHTML = "+92 300 1234567";
+} -->
+
+<!--part 4 -->
+
+<!-- <script>
+
+        function myFunction() {
+          var x = document.getElementById("first-name").name;
+          document.getElementById("first-name").innerHTML = x;
+         console.log(x);
+        }
+        </script> -->
+
+        <!--part 5-->
+        <!-- <script>
+
+                function myFunction() {
+                  var x = document.getElementById("last-name").name;
+                  document.getElementById("last-name").innerHTML = x;
+                 console.log(x);
+                }
+                function yourFunction() {
+                  var y = document.getElementById("email").name;
+                  document.getElementById("email").innerHTML = y;
+                 console.log(y);
+                }
+                </script> -->
+        
+<!--</body>
+
+</html> -->
+
+
+
+
+
+
+
+
+<!--Q2 or part two of chap 58 - 67-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div>
+                <h1> DOM </h1>
+                <div id="form-content" class="content">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" />
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" />
+                <label for="email">Email</label>
+                <input type="text" id="email" />
+                </div>
+                <div id="main-content" class="content"><p class="render"> First Name : Alex</p><!--<button onclick="myFunction()">Try it</button><p id="demo"></p>--><p class="render" id="lastName">Last Name: Bank</p><button onclick="myFunction()">Try it 2</button><p id="demo"></p>
+                <p class="render"> Email : alexbank@example.com</p>
+                <p class="render"> Country : Pakistan </p>
+                <p class="render"> contact : +92 300 1234567</p><button onclick="yourFunction()">Try it 2</button><p id="nemo"></p>
+                 
+                </div>
+                </div>
+<!-- part 1 -->
+<!-- <script>
+    var x = document.getElementById("form-content").nodeType;
+    console.log(x)
+</script> -->
+<!-- part 2 -->
+<!-- <script>
+var x = document.getElementById("last-name").nodeType;
+var c = document.getElementById("last-name").childNodes;
+console.log(x)
+console.log(c)
+</script> -->
+<!--part 3 -->
+
+<!-- <script>
+// function myFunction() {
+//   var textnode = document.createTextNode("Water");
+//   var item = document.getElementById("main-content").childNodes[1];
+//   item.replaceChild(textnode, item.childNodes[1]);
+// }
+</script> -->
+
+<!-- part 4 -->
+<!-- <script>
+function myFunction() {
+  var list = document.getElementById("main-content").firstChild.innerHTML;
+  document.getElementById("demo").innerHTML = list;
+}
+function yourFunction() {
+  var mist = document.getElementById("myList").lastChild.innerHTML;
+  document.getElementById("nemo").innerHTML = mist;
+}
+</script> -->
+
+
+<!-- part 5 -->
+<!-- <script>
+function myFunction() {
+    var x = document.getElementById("lastName").previousSibling.innerHTML; 
+    document.getElementById("demo").innerHTML = x;
+  }
+  function yourFunction() {
+    var y = document.getElementById("lastName").previousSibling.innerHTML; 
+    document.getElementById("lemo").innerHTML = y;
+  }
+</script> -->
+
+
+<!-- part 6 -->
+
+<script>
+        // function myFunction() {
+        //   var x = document.getElementById("email").parentNode.nodeName;
+        //   document.getElementById("demo").innerHTML = x;
+        // }
+        // function yourFunction() {
+        //   var y = document.getElementById("email").nodeType.nodeName;
+        //   document.getElementById("demo").innerHTML = y;
+        // }
+        // </script>
+
+            </body>
+
+</html>

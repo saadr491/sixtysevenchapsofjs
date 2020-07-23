@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*Q1*/
+    // var a = new Date();
+    // console.log(a);
+    /*Q2*/
+    // var a = new Date();
+    // var n = a.getMonth();
+//      switch(n){
+//     case 0:
+// alert("current month :- JANUARY")
+// break; //statement idhar hee ruk jai ga aagay nhi barhay ga
+// case 1:
+// alert("current month :- FEBRUARY")
+// break;
+// case 2:
+// alert("current month :- MARCH")
+// break;
+// case 3:
+// alert("current month :- APRIL")
+// break;
+// case 4:
+// alert("current month :- MAY")
+// break;
+// case 5:
+// alert("current month :- JUNE")
+// break;
+// }
+    /*Q3*/
+//     var a = new Date();
+// var b = a.toString();
+// var c = b.slice(0,3);  
+// alert(c) 
+    /*Q4*/
+//     var d = new Date();
+//   var n = d.getDay()
+//     switch(n){
+//         case 5:
+//             alert("its fun day");
+//             break;
+//             case 6:
+// alert("its fun day")
+// break;
+// default:
+//     alert("its not a funday")
+// break;    
+// }
+    /*Q5*/
+    // var d = new Date();
+    // if( d < 16){
+    //     alert("First fifteen days of the month");
+    // }
+    // else{
+    //     alert("Last fifteen days of the month")
+    // }
+    /*Q6*/
+//     var old= new Date(prompt("enter DOB?","JAN 1 1970"))
+//     document.write("old date:- " + " " + old + "<br>")
+// var oldmili = old.getTime();
+// document.write("old date in millisecond" + " " + oldmili + "<br>")
+// var today = new Date();
+// document.write("current date:- " + " " + today + "<br>")
+// var today_milli= today.getTime();
+// document.write("old date in millisecond" + " " + today_milli + "<br>")
+// elapsed_min = today_milli - oldmili;
+// document.write("elapsed minutes since 1 jan 1970" + " ----> " + elapsed_min)
+// var app = (elapsed_min / (1000)) / 60;  
+// var apps = Math.floor(app)
+// document.write(" minutes :- " + apps)
+    /*Q7*/
+    // var d = new Date();
+    // var n = d.getHours();
+    // document.write(n + "<br>")
+    // if( n > 12){
+    //     document.write("its pm" + "<br>")
+    // }
+    // else{
+    //     document.write("its am" + "<br>")
+    // }
+    /*Q8 (imp question)*/
+//     var laterdate = new Date(2020, 11, 31, 0, 0, 0, 0); //7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):
+// document.write(laterdate)
+
+    /*Q9*/
+//     var oldramazandate= new Date(prompt("enter ramazan date?","JAN 1 1970"))
+//     document.write("oldramazandate:- " + " " + oldramazandate + "<br>")
+// var oldramazanmilli = oldramazandate.getTime();
+// document.write(" old ramazan date in millisecond" + " " + oldramazanmilli + "<br>")
+// var today = new Date();
+// document.write("current date:- " + " " + today + "<br>")
+// var today_milli= today.getTime();
+// document.write("old date in millisecond" + " " + today_milli + "<br>")
+// elapsed_min = today_milli - oldramazanmilli;
+// document.write("elapsed minutes since  June 18, 2015" + " ----> " + elapsed_min)  
+// var days =  (elapsed_min / (1000*60*60*24));
+// var day = Math.floor(days)
+// document.write("days :-" + " " + day )
+    /*Q10*/
+//     var bd= new Date(prompt("enter bd?","JAN 1 2020"))
+//     document.write("old date:- " + " " + bd + "<br>")
+// var bdmili = bd.getTime();
+// document.write("old date in millisecond" + " " + bdmili + "<br>")
+// var today = new Date();
+// document.write("current date:- " + " " + today + "<br>")
+// var today_milli= today.getTime();
+// document.write("current date in millisecond" + " " + today_milli + "<br>")
+// elapsed_sec = today_milli - bdmili;
+// document.write("elapsed minutes since JAN 1 2020" + " ----> " + elapsed_sec)
+// var app = (elapsed_sec / (1000)) ;
+// var apps = Math.floor(app)
+// document.write(" second :- " + apps)
+    /*Q11*/
+//     var d = new Date();
+//     document.write(d + "<br>")
+//     var t = d.getHours();
+//  document.write("hour:- "+ t  )
+//  if ( t == 13 ){
+//      alert ("1 hour ago the time was 12" )
+//  }
+
+    /*Q12*/
+//     var old= new Date(prompt("enter 100 yrs back date?","JAN 1 1970"))
+//     document.write("old date:- " + " " + old + "<br>")
+// var oldmili = old.getTime();
+// document.write("old date in millisecond" + " " + oldmili + "<br>")
+// var today = new Date(prompt("enter today's date?","JAN 1 1970"))
+// document.write("current date:- " + " " + today + "<br>")
+// var today_milli= today.getTime();
+// document.write("old date in millisecond" + " " + today_milli + "<br>")
+// elapsed_min = today_milli - oldmili;
+// document.write("elapsed time" + " ----> " + elapsed_min + "<br>")
+// var mint= (elapsed_min / 1000)  / 60
+// var mints=Math.floor(mint);
+// var h = mints / 60;
+// var h1 = Math.floor(h);
+// document.write("Hours:- " + h1 + "<br>");
+// if ( h1 == 876600){
+//     alert ("The date 100 years ago was '20 june 1920'")
+
+// }
+// else {
+//     alert("Error! Not 100 years margin!")
+// }
+    /*Q13*/
+//     var dob= new Date(prompt("enter DOB?","JAN 1 1970"))
+// var dobmili = dob.getTime();
+// var today = new Date();
+// var todaymilli = today.getTime();
+// var diff = todaymilli - dobmili;
+// var accurate_age = Math.floor(diff/(1000*60*60*24*30*12));
+// document.write(accurate_age + "<br>");
+// document.write("your birth year :-" + dob)
+    /*Q14*/
+//     var cn = prompt("Customer name?")
+//     var cm = prompt("Current Month?")
+//     var n_o_u = +prompt("Number Of Units?")  
+//     var n_o_u_1 = Math.round(n_o_u)
+//     var c_p_u = +prompt("Charge Per Unit?")
+//     var Net_Amount_Payable_within_Due_Date = n_o_u_1 * c_p_u   
+// var Late_Payment_Surcharge = 350;
+// var Gross_Amount_Payable_after_Due_Date = Net_Amount_Payable_within_Due_Date + Late_Payment_Surcharge  
+// document.write("Customer name : -" + " " + cn + "<br>")
+// document.write("Current Month : -" + " " + cm + "<br>")
+// document.write("Number Of Units : -" + " " + n_o_u_1 + "<br>")
+// document.write("Charge Per Unit : -" + " " + c_p_u + "<br>")
+// document.write("Net Amount Payable (within Due Date) : -" + " " + Net_Amount_Payable_within_Due_Date + "<br>")
+// document.write("Late Payment Surcharge : -" + " " + Late_Payment_Surcharge + "<br>")
+// document.write("Gross Amount Payable (after Due Date) : -" + " "+ Gross_Amount_Payable_after_Due_Date + "<br>")
+    </script>
+</body>
+</html>
